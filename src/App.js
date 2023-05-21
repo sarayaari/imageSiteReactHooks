@@ -13,7 +13,9 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route  path="/home/:category" element={<Home />} />
+        <Route  path="/info" element={<MoviInfo />} />
         <Route  path="/info/:id" element={<MoviInfo />} />
+        
         <Route  path="/*" element={<h1>page not found,fail :(</h1>} />
       </Routes>
       <Footer />

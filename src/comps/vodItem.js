@@ -1,4 +1,4 @@
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 function VodItem(props) {
@@ -8,7 +8,9 @@ function VodItem(props) {
   const nav = useNavigate();
    
   const onClickInfo = () => {
+    //  nav(`./info`)
      nav(`./info/?id=${props.obj.id}`)
+    //  http://localhost:3000/?category=sky
   }
 
   return (

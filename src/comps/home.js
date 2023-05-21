@@ -16,7 +16,8 @@ export default function Home() {
     let myUrl = `https://pixabay.com/api/?key=36523029-b6fc011bf7a78937125fffbe0&category=${_searchQ}`;
     let resp = await fetch(myUrl)
     let arr = await resp.json();
-    console.log("props from home: "+arr.hits)
+  console.log("props from home: ");
+    console.log(arr.hits);
     setMyArr(arr.hits||myErrArr)
   }
   return (
